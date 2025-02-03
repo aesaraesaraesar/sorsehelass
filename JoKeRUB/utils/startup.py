@@ -96,7 +96,7 @@ async def startupmessage():
                 BOTLOG_CHATID,
                 "https://t.me/MemeSoundJep/24",
                 caption="**‏᯽︙ بــوت HELLAS  يـعـمـل بـنـجـاح ✓ \n᯽︙ أرسل `.الاوامر`لرؤية اوامر السورس \n  ᯽︙ لأستعمال بوت الأختراق عبر كود التيرمكس أرسل`.هاك`**",
-                buttons=[(Button.url("سورس HELLAS ", "https://t.me/n_nnae"),)],
+                buttons=[(Button.url("سورس HELLAS ", "https://t.me/HELLASUserBot"),)],
             )
     except Exception as e:
         LOGS.error(e)
@@ -136,7 +136,7 @@ async def mybot():
         if bot_name.endswith("Assistant"):
             print("تم تشغيل البوت")
         if starkbot.bot_inline_placeholder:
-            print("HELLAS  ForEver")
+            print("7rB  ForEver")
         else:
             try:
                 await l313l.send_message("@BotFather", "/setinline")
@@ -297,21 +297,21 @@ async def verifyLoggerGroup():
                 + str(e)
             )
     else:
-        descript = "- عزيزي المستخدم هذه هي مجموعه الاشعارات يرجى عدم حذفها  - @n_nnae"
+        descript = "- عزيزي المستخدم هذه هي مجموعه الاشعارات يرجى عدم حذفها  - @HELLASUserBot"
         photobt = await l313l.upload_file(file="l313l/razan/resources/start/k_jj_j.JPEG")
-        botlog_group_id = await 7rB _the_best(l313l, "مجموعة أشعارات HELLAS ")
+        botlog_group_id = await 7rB _the_best(l313l, "مجموعة أشعارات  HELLAS ")
         if botlog_group_id:
             addgvar("PRIVATE_GROUP_BOT_API_ID", botlog_group_id)
             print("᯽︙تم العثور على مجموعة المساعدة بالفعل وإضافتها إلى المتغيرات.")
         else:
             _, groupid = await create_supergroup(
-                "مجموعة أشعارات HELLAS ", l313l, Config.TG_BOT_USERNAME, descript, photobt
+                "مجموعة أشعارات HELLAS", l313l, Config.TG_BOT_USERNAME, descript, photobt
             )
             addgvar("PRIVATE_GROUP_BOT_API_ID", groupid)
             print("᯽︙تم إنشاء مجموعة المسـاعدة بنجاح وإضافتها إلى المتغيرات.")
         flag = True
     if PM_LOGGER_GROUP_ID == -100:
-        descript = "᯽︙ وظيفه الكروب يحفظ رسائل الخاص اذا ما تريد الامر احذف الكروب نهائي \n  - @n_nnae"
+        descript = "᯽︙ وظيفه الكروب يحفظ رسائل الخاص اذا ما تريد الامر احذف الكروب نهائي \n  - @HELLASUserBot"
         photobt = await l313l.upload_file(file="l313l/razan/resources/start/k_jj_j2.JPEG")
         pm_logger_group_id = await 7rB _the_best(l313l, "مجموعة التخزين")
         if pm_logger_group_id:
